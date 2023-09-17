@@ -21,6 +21,23 @@ public class ExampleOrderMain {
         IOrderPayUseCase orderPayUseCase = OrderFactory.payOrderUseCase();
         IOrderShippingUseCase orderShipping = OrderFactory.shippingUseCase();
 
+
+        /*IOrderItemUseCase orderItemUseCase = OrderFactory.orderItemUseCase();*/
+        /* public static IOrderItemUseCase orderItemUseCase() { return null;}*/
+
+        IOrderAddItemUseCase orderAddItemUseCase = OrderFactory.orderAddItemUseCase();
+        IOrderChangeItemUseCase orderChangeItemUseCase = OrderFactory.orderChangeItemUseCase();
+
+        IOrderRemoveItemUseCase orderRemoveItemUseCase = OrderFactory.orderRemoveItemUseCase();
+        /*IOrderAddItemUseCase orderAddItemUseCase = OrderFactory.orderAddItemUseCase();*/
+
+
+
+        /*IOrderItemUseCase    orderItemUseCase    = OrderFactory.orderItemUseCase();*/
+        /*IOrderPlaceUseCase   orderPlaceUseCase =   OrderFactory.placeOrderUseCase();*/
+
+        /*public static IOrderAddItemUseCase orderAddItemUseCase(){return null;}*/
+
         Customer customer = new Customer();
         customer.setName("William");
         customerUseCase.create(customer);

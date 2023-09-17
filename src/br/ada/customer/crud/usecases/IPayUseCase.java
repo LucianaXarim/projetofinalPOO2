@@ -1,17 +1,18 @@
 package br.ada.customer.crud.usecases;
-
 import br.ada.customer.crud.model.Order;
 
-public interface IOrderPlaceUseCase {
+public interface IPayUseCase {
 
-    /*
+    /* Essa Interface Realiza o pagamento
      * 1 - Pedido precisa estar com status == OrderStatus.OPEN
      * 2 - Pedido precisa ter no mínimo um item
      * 3 - Valor deve ser maior que zero
      * 4 - Notificar o cliente que esta aguardando o pagamento
      * 5 - Pedido deve passar a ter o status igual OrderStatus.PENDING_PAYMENT
      *void placeOrder(Order order);
+     * void notify(Order oder);
+     * void pay(Order oder);
      */
-    void placeOrder(Order order);
+    void pay(Order oder);
 
 }

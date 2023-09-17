@@ -37,7 +37,7 @@ public class CreateOrderUseCaseImpl implements ICreateOrderUseCase {
     private void validCustomer(Customer customer) {
         Customer found = customerRepository.findByDocument(customer.getDocument());
         if (found == null) {
-            throw new IllegalStateException("Cliente não encontrado");
+            throw new IllegalStateException("Cliente não encontrado na base de dados");
         }
     }
 

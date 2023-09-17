@@ -5,7 +5,6 @@ import br.ada.customer.crud.model.Order;
 
 public interface ICreateOrderUseCase {
 
-
     /*
      * 1 - Inicia um novo pedido para o cliente
      * 2 - Pedido deve iniciar com status igual a OrderStatus.OPEN
